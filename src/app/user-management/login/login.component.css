@@ -1,0 +1,36 @@
+.click:hover{
+    background: gainsboro;
+}
+.click{
+    cursor: pointer;
+    font-family:sans-serif;
+    font-size:1.2rem;
+    padding:3%;
+}
+.left{
+    height:100vh;
+    background:#0d254c;
+}
+.right{
+    height: 100vh;
+}
+.brand{
+    font-size:1.5em;
+    color:white;
+    padding:2%;
+
+}
+.text{
+    font-family: sans-serif;
+}
+.email{
+    color:deepskyblue;
+}
+.password{
+    color:deepskyblue;
+}
+.title{
+    font-family: sans-serif;
+    font-weight:bold;
+    font-size:1.15rem;
+}

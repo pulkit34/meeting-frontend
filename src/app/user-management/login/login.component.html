@@ -1,0 +1,70 @@
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col-md-6 left">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 m-0 p-0">
+            <p class="text brand">
+              <i class="fa fa-group"></i> Meeting Planner</p>
+          </div>
+          <div style="margin-top:15%;" class="col-md-12">
+            <h1 class="text-white text-center text">Already Have An Account?</h1>
+            <p class="text-white text-center text">Login To Continue</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 right">
+      <div class="container-fluid">
+        <div class="row">
+
+          <div class="col-4">
+            <p class="text-center click" [routerLink]="['/login']">Login</p>
+          </div>
+          <div class="col-4">
+            <p class="text-center click" [routerLink]="['/signup']"> SignUp</p>
+          </div>
+          <div class="col-4">
+            <p class="text-center click" [routerLink]="['/forgot']">Forgot Password? </p>
+          </div>
+        </div>
+
+
+        <div class="col-12" style="margin-top:10%">
+          <p class="text-center title">SIGN IN HERE:</p>
+
+          <form #loginForm="ngForm" (ngSubmit)="login()">
+
+            <span class="text email">Email* : </span>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">
+                  <i class="fa fa-user"></i>
+                </span>
+              </div>
+              <input type="email" name="email" [(ngModel)]="email" class="form-control">
+            </div>
+            <br>
+
+            <span class="text password">Password* : </span>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">
+                  <i class="fa fa-key"></i>
+                </span>
+              </div>
+              <input type="password" name="password" [(ngModel)]="password" class="form-control" />
+            </div>
+            <br>
+
+            <button style="margin-left:45%;font-family:sans-serif;" type="submit" class="btn btn-success text-white">Login</button>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
